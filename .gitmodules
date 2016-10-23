@@ -1,0 +1,3 @@
+[submodule "war2tools"]
+	path = war2tools
+	url = https://github.com/jeanguyomarch/war2tools.git
