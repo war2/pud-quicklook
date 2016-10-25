@@ -7,78 +7,97 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0FCED1841DAACAFF00C71689 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FCED1831DAACAFF00C71689 /* GenerateThumbnailForURL.c */; };
-		0FCED1861DAACAFF00C71689 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FCED1851DAACAFF00C71689 /* GeneratePreviewForURL.c */; };
-		0FCED1881DAACAFF00C71689 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 0FCED1871DAACAFF00C71689 /* main.c */; };
+		0F0C2AB71DBF42F400AD7D07 /* GeneratePreviewForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C2AB41DBF42F400AD7D07 /* GeneratePreviewForURL.c */; };
+		0F0C2AB81DBF42F400AD7D07 /* GenerateThumbnailForURL.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C2AB51DBF42F400AD7D07 /* GenerateThumbnailForURL.c */; };
+		0F0C2AB91DBF42F400AD7D07 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C2AB61DBF42F400AD7D07 /* main.c */; };
+		0F0C2ABC1DBF431E00AD7D07 /* ql_generate.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C2ABA1DBF431E00AD7D07 /* ql_generate.c */; };
+		0F0C2ABD1DBF431E00AD7D07 /* ql_generate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0C2ABB1DBF431E00AD7D07 /* ql_generate.h */; };
+		0F0C2ABE1DBF432B00AD7D07 /* libpud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0C2A8C1DBF40C600AD7D07 /* libpud.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0FCED1801DAACAFF00C71689 /* pud-quicklook.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pud-quicklook.qlgenerator"; sourceTree = BUILT_PRODUCTS_DIR; };
-		0FCED1831DAACAFF00C71689 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
-		0FCED1851DAACAFF00C71689 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
-		0FCED1871DAACAFF00C71689 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
-		0FCED1891DAACAFF00C71689 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F0C2A8C1DBF40C600AD7D07 /* libpud.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libpud.a; path = build/libpud/libpud.a; sourceTree = "<group>"; };
+		0F0C2AA71DBF426200AD7D07 /* pud-quicklook.qlgenerator */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "pud-quicklook.qlgenerator"; sourceTree = BUILT_PRODUCTS_DIR; };
+		0F0C2AAF1DBF426200AD7D07 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0F0C2AB41DBF42F400AD7D07 /* GeneratePreviewForURL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GeneratePreviewForURL.c; sourceTree = "<group>"; };
+		0F0C2AB51DBF42F400AD7D07 /* GenerateThumbnailForURL.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = GenerateThumbnailForURL.c; sourceTree = "<group>"; };
+		0F0C2AB61DBF42F400AD7D07 /* main.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		0F0C2ABA1DBF431E00AD7D07 /* ql_generate.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ql_generate.c; sourceTree = "<group>"; };
+		0F0C2ABB1DBF431E00AD7D07 /* ql_generate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ql_generate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		0FCED17C1DAACAFF00C71689 /* Frameworks */ = {
+		0F0C2AA31DBF426100AD7D07 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F0C2ABE1DBF432B00AD7D07 /* libpud.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F0C2A8B1DBF40C600AD7D07 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0F0C2A8C1DBF40C600AD7D07 /* libpud.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		0F0C2AA81DBF426200AD7D07 /* pud-quicklook */ = {
+			isa = PBXGroup;
+			children = (
+				0F0C2ABA1DBF431E00AD7D07 /* ql_generate.c */,
+				0F0C2ABB1DBF431E00AD7D07 /* ql_generate.h */,
+				0F0C2AB41DBF42F400AD7D07 /* GeneratePreviewForURL.c */,
+				0F0C2AB51DBF42F400AD7D07 /* GenerateThumbnailForURL.c */,
+				0F0C2AB61DBF42F400AD7D07 /* main.c */,
+				0F0C2AAF1DBF426200AD7D07 /* Info.plist */,
+			);
+			path = "pud-quicklook";
+			sourceTree = "<group>";
+		};
 		0FCED1761DAACAFE00C71689 = {
 			isa = PBXGroup;
 			children = (
-				0FCED1821DAACAFF00C71689 /* pud-quicklook */,
+				0F0C2AA81DBF426200AD7D07 /* pud-quicklook */,
 				0FCED1811DAACAFF00C71689 /* Products */,
+				0F0C2A8B1DBF40C600AD7D07 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		0FCED1811DAACAFF00C71689 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0FCED1801DAACAFF00C71689 /* pud-quicklook.qlgenerator */,
+				0F0C2AA71DBF426200AD7D07 /* pud-quicklook.qlgenerator */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		0FCED1821DAACAFF00C71689 /* pud-quicklook */ = {
-			isa = PBXGroup;
-			children = (
-				0FCED1831DAACAFF00C71689 /* GenerateThumbnailForURL.c */,
-				0FCED1851DAACAFF00C71689 /* GeneratePreviewForURL.c */,
-				0FCED1871DAACAFF00C71689 /* main.c */,
-				0FCED1891DAACAFF00C71689 /* Info.plist */,
-			);
-			path = "pud-quicklook";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		0FCED17D1DAACAFF00C71689 /* Headers */ = {
+		0F0C2AA41DBF426100AD7D07 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0F0C2ABD1DBF431E00AD7D07 /* ql_generate.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		0FCED17F1DAACAFF00C71689 /* pud-quicklook */ = {
+		0F0C2AA61DBF426100AD7D07 /* pud-quicklook */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0FCED18C1DAACAFF00C71689 /* Build configuration list for PBXNativeTarget "pud-quicklook" */;
+			buildConfigurationList = 0F0C2AB01DBF426200AD7D07 /* Build configuration list for PBXNativeTarget "pud-quicklook" */;
 			buildPhases = (
-				0FCED17B1DAACAFF00C71689 /* Sources */,
-				0FCED17C1DAACAFF00C71689 /* Frameworks */,
-				0FCED17D1DAACAFF00C71689 /* Headers */,
-				0FCED17E1DAACAFF00C71689 /* Resources */,
+				0F0C2AA21DBF426100AD7D07 /* Sources */,
+				0F0C2AA31DBF426100AD7D07 /* Frameworks */,
+				0F0C2AA41DBF426100AD7D07 /* Headers */,
+				0F0C2AA51DBF426100AD7D07 /* Resources */,
 			);
 			buildRules = (
 			);
@@ -86,7 +105,7 @@
 			);
 			name = "pud-quicklook";
 			productName = "pud-quicklook";
-			productReference = 0FCED1801DAACAFF00C71689 /* pud-quicklook.qlgenerator */;
+			productReference = 0F0C2AA71DBF426200AD7D07 /* pud-quicklook.qlgenerator */;
 			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +117,7 @@
 				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = "Jean Guyomarc'h";
 				TargetAttributes = {
-					0FCED17F1DAACAFF00C71689 = {
+					0F0C2AA61DBF426100AD7D07 = {
 						CreatedOnToolsVersion = 8.0;
 						ProvisioningStyle = Automatic;
 					};
@@ -116,13 +135,13 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0FCED17F1DAACAFF00C71689 /* pud-quicklook */,
+				0F0C2AA61DBF426100AD7D07 /* pud-quicklook */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		0FCED17E1DAACAFF00C71689 /* Resources */ = {
+		0F0C2AA51DBF426100AD7D07 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -132,19 +151,69 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		0FCED17B1DAACAFF00C71689 /* Sources */ = {
+		0F0C2AA21DBF426100AD7D07 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0FCED1841DAACAFF00C71689 /* GenerateThumbnailForURL.c in Sources */,
-				0FCED1861DAACAFF00C71689 /* GeneratePreviewForURL.c in Sources */,
-				0FCED1881DAACAFF00C71689 /* main.c in Sources */,
+				0F0C2AB71DBF42F400AD7D07 /* GeneratePreviewForURL.c in Sources */,
+				0F0C2ABC1DBF431E00AD7D07 /* ql_generate.c in Sources */,
+				0F0C2AB81DBF42F400AD7D07 /* GenerateThumbnailForURL.c in Sources */,
+				0F0C2AB91DBF42F400AD7D07 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		0F0C2AB11DBF426200AD7D07 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_THREADSAFE_STATICS = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_PEDANTIC = YES;
+				INFOPLIST_FILE = "pud-quicklook/Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = ./build/libpud/libpud.a;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeanguyomarch.pud-quicklook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Debug;
+		};
+		0F0C2AB21DBF426200AD7D07 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CLANG_ENABLE_CODE_COVERAGE = NO;
+				CLANG_LINK_OBJC_RUNTIME = NO;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_ENABLE_CPP_EXCEPTIONS = NO;
+				GCC_ENABLE_CPP_RTTI = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = NO;
+				GCC_ENABLE_PASCAL_STRINGS = NO;
+				GCC_OPTIMIZATION_LEVEL = 3;
+				GCC_SYMBOLS_PRIVATE_EXTERN = YES;
+				GCC_THREADSAFE_STATICS = NO;
+				GCC_UNROLL_LOOPS = YES;
+				GCC_WARN_PEDANTIC = YES;
+				INFOPLIST_FILE = "pud-quicklook/Info.plist";
+				INSTALL_PATH = /Library/QuickLook;
+				LIBRARY_SEARCH_PATHS = "";
+				OTHER_LDFLAGS = ./build/libpud/libpud.a;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jeanguyomarch.pud-quicklook";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = qlgenerator;
+			};
+			name = Release;
+		};
 		0FCED18A1DAACAFF00C71689 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -188,6 +257,7 @@
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				OTHER_CFLAGS = "-I./war2tools/include";
 				SDKROOT = macosx;
 			};
 			name = Debug;
@@ -228,37 +298,22 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				MACOSX_DEPLOYMENT_TARGET = 10.12;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_CFLAGS = "-I./war2tools/include";
 				SDKROOT = macosx;
-			};
-			name = Release;
-		};
-		0FCED18D1DAACAFF00C71689 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "pud-quicklook/Info.plist";
-				INSTALL_PATH = /Library/QuickLook;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jeanguyomarch.pud-quicklook";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = qlgenerator;
-			};
-			name = Debug;
-		};
-		0FCED18E1DAACAFF00C71689 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "pud-quicklook/Info.plist";
-				INSTALL_PATH = /Library/QuickLook;
-				PRODUCT_BUNDLE_IDENTIFIER = "com.jeanguyomarch.pud-quicklook";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				WRAPPER_EXTENSION = qlgenerator;
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0F0C2AB01DBF426200AD7D07 /* Build configuration list for PBXNativeTarget "pud-quicklook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0F0C2AB11DBF426200AD7D07 /* Debug */,
+				0F0C2AB21DBF426200AD7D07 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		0FCED17A1DAACAFE00C71689 /* Build configuration list for PBXProject "pud-quicklook" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -267,14 +322,6 @@
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
-		};
-		0FCED18C1DAACAFF00C71689 /* Build configuration list for PBXNativeTarget "pud-quicklook" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				0FCED18D1DAACAFF00C71689 /* Debug */,
-				0FCED18E1DAACAFF00C71689 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
