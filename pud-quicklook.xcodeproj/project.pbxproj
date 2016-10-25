@@ -12,7 +12,6 @@
 		0F0C2AB91DBF42F400AD7D07 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C2AB61DBF42F400AD7D07 /* main.c */; };
 		0F0C2ABC1DBF431E00AD7D07 /* ql_generate.c in Sources */ = {isa = PBXBuildFile; fileRef = 0F0C2ABA1DBF431E00AD7D07 /* ql_generate.c */; };
 		0F0C2ABD1DBF431E00AD7D07 /* ql_generate.h in Headers */ = {isa = PBXBuildFile; fileRef = 0F0C2ABB1DBF431E00AD7D07 /* ql_generate.h */; };
-		0F0C2ABE1DBF432B00AD7D07 /* libpud.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 0F0C2A8C1DBF40C600AD7D07 /* libpud.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,7 +30,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0F0C2ABE1DBF432B00AD7D07 /* libpud.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
