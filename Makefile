@@ -24,7 +24,7 @@ BUILD_DIR := build
 QL := pud-quicklook.qlgenerator
 QL_DIR := /Library/QuickLook
 
-.PHONY: all install uninstall check quicklook libpud help
+.PHONY: all install uninstall check quicklook libpud help clean
 
 all: libpud quicklook
 
@@ -50,6 +50,9 @@ check: $(BUILD_DIR)/$(QL)
 	qlmanage -r
 	qlmanage -p tests/cibola.pud
 
+clean:
+	$(RM) -r $(BUILD_DIR)
+
 help:
 	@echo "-------------------------"
 	@echo "--- Available targets ---"
@@ -59,6 +62,7 @@ help:
 	@echo "install....: install the quicklook plugin"
 	@echo "uninstall..: remove the installed quicklook plugin"
 	@echo "check......: test the installed quicklook plugin"
+	@echo "clean......: remove generated files"
 	@echo ""
 	@echo "libpud.....: build the libpud only"
 	@echo "quicklook..: build the quicklook plugin only"
