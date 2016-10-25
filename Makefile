@@ -42,12 +42,12 @@ quicklook:
 
 install: uninstall
 	cp -r $(BUILD_DIR)/$(QL) $(QL_DIR)/$(QL)
+	qlmanage -r
 
 uninstall:
 	$(RM) -r $(QL_DIR)/$(QL)
 
 check: $(BUILD_DIR)/$(QL)
-	qlmanage -r
 	qlmanage -p tests/cibola.pud
 
 clean:
