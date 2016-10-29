@@ -10,7 +10,7 @@
 
 static CFDictionaryRef
 _properties_new(const char *url_str,
-                Pud        *pud)
+                const Pud  *pud)
 {
     char *name;
     CFDictionaryRef dict;
