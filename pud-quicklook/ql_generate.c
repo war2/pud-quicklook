@@ -109,12 +109,6 @@ ql_generate(CFURLRef              url,
             goto shutdown;
         }
         
-        /* Parse PUD */
-        if (PUD_FALSE == pud_parse(pud)) {
-            fprintf(stderr, "*** Failed to parse PUD at path [%s]\n", path);
-            goto close;
-        }
-        
         /* Generate bitmap */
         img = _pud_to_image(pud);
         if (NULL == img) {
